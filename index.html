@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information and External Resources -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Primus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light">
+    <!-- Background Canvas -->
+    <canvas id="bg"></canvas>
+
+    <!-- Header Section -->
+    <header class="portfolio-header">
+        <button id="show-header-btn" aria-label="Show Header" style="display:none;">☰</button>
+        <div class="header-content">
+            <h2 class="header-title"><img class="header-icon" src="/code-editing.svg"> Let's Connect  </h2>
+            <nav style="position: absolute; left: 37%;">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#biodata">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#resume-download">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-slider" style="position: absolute; right: 0; top: 0; padding: 10px;">
+    <span class="theme-label">Light</span>
+    <label class="switch">
+        <input type="checkbox" id="themeToggle" aria-label="Toggle dark/light mode">
+        <span class="slider"></span>
+    </label>
+    <span class="theme-label1">Dark</span>
+</div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Front-End Developer & Python Enthusiast</p>
+        </div>
+    </section>
+    
+    <!-- Biodata Section -->
+    <section id="biodata">
+        <div class="profile-pic" id="profile-pic" href="Profile.jpg">
+            <img src="Profile.jpg" alt="Profile Picture" class="profile-pic" id="profile-pic">
+        </div>
+        <div class="bio-info">
+            <h2>Joy Sengupta</h2>
+            <p><strong>Profession:</strong> AIML Undergrad at <a class="university" href="https://nit.ac.in">NiT</a></p>
+            <p><strong>Bio:</strong> AIML Undergrad with a passion for exploring the intersection of technology and creativity.</p>
+            <p><strong>Contact:</strong> <a style="color: #00ffb3;" href="mailto:joysengupta521@gmail.com">Mail</a> ; <a style="color: #00ffb3;" href="https://www.linkedin.com/in/joy-sengupta-4469bb338/">LinkedIn</a></p>
+            <p><strong>Hobbies:</strong> Coding, Listening to Music, Photography and Playing Video Games</p>
+        </div>
+        <div class="robot-logo-container">
+            <img src="/logos/robot-svgrepo-com.svg" alt="Robot Logo" class="robo-logo" style="height: 200px;">
+        </div>
+    </div>
+    
+</section>
+<section id="about">
+    <div>
+        <h1 style="font-size: 30px;">About Me</h1>
+        <p style="font-size: 15px;"id="about-para">I'm Joy Sengupta, an AIML undergrad at NIT with a passion for blending technology and creativity, particularly through my love for photography and innovative projects. My academic journey in artificial intelligence and machine learning equips me to explore cutting-edge fields like computer vision and generative AI, while my photography fuels my creative expression, capturing moments and telling stories through light and composition. I thrive on creative challenges that push the boundaries of what's possible, whether it's developing AI-driven tools to enhance photographic art, creating immersive multimedia experiences, or applying machine learning to solve real-world problems with a creative twist. By merging my technical expertise with an artistic perspective, I aim to innovate at the intersection of AI and creativity, building projects that inspire and redefine how we interact with technology and visuals.</p>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project" id="project-1">
+                <canvas class="project-canvas"></canvas>
+                <img src="/project_logos/Snake-Water-Gun.png" alt="Project 1">
+                <h3>Snake, Water, Gun Game using Python</h3>
+                <p>A Fun Game which allows you to play Snake, Water, Gun against the computer.</p>
+                <a href="https://github.com/Joy-S-07/Water-Snake-Gun-Game" target="_blank">View Project on Git-Hub</a>
+            </div>
+            <div class="project" id="project-2">
+                <canvas class="project-canvas"></canvas>
+                <img src="/project_logos/Number_Guessing.png" alt="Project 2">
+                <h3>Number Guessing Game using C</h3>
+                <p>A simple console-based game where the player guesses a number.</p>
+                <a href="https://github.com/Joy-S-07/Number-guessing-Game" target="_blank">View Project on Git-Hub</a>
+            </div>
+            <div class="project" id="project-3">
+                <canvas class="project-canvas"></canvas>
+                <img src="/project_logos/ULTRON-The_Virtual_Assistant.png" alt="Project 3">
+                <h3>ULTRON: The Virtual Assistant</h3>
+                <p>A real-time chat in Terminal which uses AI to assist users. (eg. Opening applications, answering questions)</p>
+                <a href="https://github.com/Joy-S-07/ULTRON-The_Virtual_Assistant" target="_blank">View Project on Git-Hub</a>
+            </div>
+            <div class="project" id="project-3">
+                <canvas class="project-canvas"></canvas>
+                <img src="/project_logos/portfolio.jpg" alt="Project 3">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my projects and skills.</p>
+                <a href="https://github.com/Joy-S-07/" target="_blank">View Project on Git-Hub</a>
+                <a href="https://joy-s-07.github.io/" target="_blank">View Live Website</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="logo">
+            <nav class="skill-name">
+                <ul>
+                    <li style="font-size: large;"> • Programming Languages </li>
+                    <li style="font-size: large;"> • AI Tools for Development & Automation </li>
+                    <li style="font-size: large;"> • Microsoft Office </li>
+                    <li style="font-size: large;"> • Logic Building </li>
+                    <li style="font-size: large;"> • Problem Solving </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="skills-container" style="align-items: center;">
+            <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="85"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="80"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="89"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">AI Tools</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="95"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Microsoft Excel</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Microsoft Office</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="85"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Communication</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="80"></div>
+                </div>
+            </div>
+            <div class="skill" id="programming-languages">
+                <div class="logos">
+                    <nav>
+                        <img height="60" src="/logos/html5.png" alt="HTML5 Logo">
+                        <img height="60" src="/logos/css.png" alt="CSS3 Logo">
+                        <img height="60" src="/logos/c.png" alt="C Logo">
+                        <img height="60" src="/logos/c++.png" alt="C++ Logo">
+                        <img height="60" src="/logos/python.png" alt="Python Logo">
+                        <img height="60" src="/logos/Word.png" alt="Word Logo">
+                        <img height="60" src="/logos/Excel.png" alt="Excel Logo">
+                        <img height="60" src="/logos/PowerPoint.png" alt="PowerPoint Logo">
+                        <img height="60" src="/logos/ChatGPT.png" alt="ChatGPT Logo">
+                        <img height="60" src="/logos/GRok.png" alt="GRok Logo">
+                        <img height="60" src="/logos/Microsoft_Copilot_Icon.svg.png" alt="Microsoft Copilot Logo">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <h2>Preferred
+
+ Languages</h2>
+        <div class="languages-container">
+            <div class="language">
+                <div class="skill-name">Bengali - Native Language</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="95"></div>
+                </div>
+            </div>
+            <div class="language">
+                <div class="skill-name">English</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="90"></div>
+                </div>
+            </div>
+            <div class="language">
+                <div class="skill-name">Hindi</div>
+                <div class="progress-bar">
+                    <div class="progress" data-percentage="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificate-container">
+        <h2 style="background-color: transparent;">Hall of Certificates</h2>
+        <div class="certificates">
+            <div class="certificate">
+                <img src="/Certificates/Udemy-Python.jpg" alt="Python">
+                <h3>Python</h3>
+                <p><strong>Issuer:</strong> Udemy </p>
+                <p><strong>Date:</strong>11<sup>th</sup> April 2025</p>
+                <a href="https://www.udemy.com/certificate/UC-745ca31f-2fd3-4873-82c6-3da655b249e5/" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="/Certificates/PPS_Hackerrank.png" alt="Programming for Problem Solving">
+                <h3>Programming for Problem Solving</h3>
+                <p><strong>Issuer:</strong> HackerRank</p>
+                <p><strong>Date:</strong>14<sup>th</sup> April 2025</p>
+                <a href="https://www.hackerrank.com/certificates/bc58bce038d7" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="/Certificates/Udemy-C_Basics.jpg" alt="C">
+                <h3>C Basics</h3>
+                <p><strong>Issuer:</strong> Udemy</p>
+                <p><strong>Date:</strong>18<sup>th</sup> June 2025</p>
+                <a href="https://www.udemy.com/certificate/UC-2d972419-15e6-4567-aa25-4c90b5726617/" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="/Certificates/Udemy-Excel.jpg" alt="Microsoft Excel">
+                <h3>Microsoft Excel</h3>
+                <p><strong>Issuer:</strong> Udemy</p>
+                <p><strong>Date:</strong>21<sup>st</sup> April 2025</p>
+                <a href="https://www.udemy.com/certificate/UC-a4d5ca6e-4ba1-44e1-8df1-84f9900ad9b4/" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="/Certificates/Udemy-HTML.jpg" alt="HTML">
+                <h3>HTML</h3>
+                <p><strong>Issuer:</strong> Udemy</p>
+                <p><strong>Date:</strong>22<sup>nd</sup> April 2025</p>
+                <a href="https://www.udemy.com/certificate/UC-db4fa41b-29e0-44ed-aae4-1b3f70c38fdb/" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="/Certificates/Udemy-C_CSS.jpg" alt="CSS">
+                <h3>CSS</h3>
+                <p><strong>Issuer:</strong> Udemy</p>
+                <p><strong>Date:</strong>18<sup>th</sup> June 2025</p>
+                <a href="https://www.udemy.com/certificate/UC-0590c2f2-f13f-4124-bb98-e8cdff615e33/" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <div class="center-btn" id="resume-download">
+        <a href="/Resume/Joy_Resume.pdf" download class="resume-download-btn">Download Resume   <img class ="download-icon" height="15px" src="/logos/download.svg"></a>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="mailto:owner@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+                <div class="center-btn">
+                    <a href="https://wa.me/+917003480325" target="_blank" class="whatsapp-link">Get in Touch</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chatbox Section -->
+    <div id="chatbox" class="chatbox-overlay" style="display:none;">
+        <div id="chatbox-header">
+            <span>Chat with Me</span>
+            <button id="chatbox-close">✖</button>
+        </div>
+        <div id="chatbox-body"></div>
+        <div id="chatbox-input">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="chat-send-btn">Send</button>
+        </div>
+    </div>
+    <button id="chat-toggle" class="chat-toggle-btn" aria-label="Open chat">💬</button>
+
+    <!-- Social Links Section -->
+    <section id="social-links" style="margin-top: 50px; padding: 20px;">
+        <div class="social-container">
+            <h2>Connect With Me</h2>
+            <p style="text-align: center; font-size: large;">Feel free to connect with me on any of the platforms below:</p>
+            <p style="text-align: center; font-size: large;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/joy-sengupta-4469bb338/" target="_blank"><img height="30" src="/logos/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Joy-S-07" target="_blank"><img height="30" src="/logos/github-mark-white.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/_being.gojo_/" target="_blank"><img height="40" src="/logos/instagram-new.png" alt="Instagram"></a>
+                <a href="https://x.com/_being_gojo_?t=GJpjw-qIaTi4-bSoXkB-ng&s=09" target="_blank"><img height="30" src="/logos/X_logo_2023_(white).png" alt="X"></a>
+            </div>
+            <div class="social-text-links" style="color: white">
+                <a href="https://www.linkedin.com/in/joy-sengupta-4469bb338/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Joy-S-07" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/_being.gojo_/" target="_blank">Instagram</a>
+                <a href="https://x.com/_being_gojo_?t=GJpjw-qIaTi4-bSoXkB-ng&s=09" target="_blank">X</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- External Scripts -->
+     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.15/build/spline-viewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
